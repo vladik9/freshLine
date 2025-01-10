@@ -87,3 +87,14 @@ update db to refelct new links
 UPDATE wp_options SET option_value = 'http://192.168.0.52:8086/' WHERE option_name = 'siteurl';
 UPDATE wp_options SET option_value = 'http://192.168.0.52:8086/' WHERE option_name = 'home';
 ```
+
+### Restoring
+
+```bash
+mysql -u root -p
+CREATE DATABASE wordpress;
+SHOW GRANTS FOR 'root'@'localhost';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost';
+FLUSH PRIVILEGES;
+sudo systemctl restart mysqlmysql -h localhost -u root -p --verbose wordpress < wordpress.sql
+```
