@@ -61,3 +61,29 @@ Contact page:
 ## Dump image sql
 
 Import backup.sql
+
+Create a:
+
+```bash
+'DB_NAME', 'wordpress'
+```
+
+```bash
+'DB_USER' :  'wpuser'
+```
+
+```bash
+'DB_PASSWORD' : 'password'
+```
+
+```bash
+'DB_HOST' : 'localhost'
+```
+
+Visit [Link](https://ubuntu.com/tutorials/install-and-configure-wordpress "config") for more information!
+update db to refelct new links
+
+```bash
+UPDATE wp_options SET option_value = 'http://192.168.0.52:8086/' WHERE option_name = 'siteurl';
+UPDATE wp_options SET option_value = 'http://192.168.0.52:8086/' WHERE option_name = 'home';
+```
