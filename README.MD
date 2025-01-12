@@ -59,17 +59,6 @@ FLUSH PRIVILEGES;
 sudo systemctl restart mysqlmysql -h localhost -u root -p --verbose wordpress < wordpress.sql
 ```
 
-## Usage
-
-Provide examples of how to use your project. For example:
-
-```python
-from freshline import some_function
-
-result = some_function()
-print(result)
-```
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
