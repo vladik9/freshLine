@@ -56,8 +56,15 @@ CREATE DATABASE wordpress;
 SHOW GRANTS FOR 'root'@'localhost';
 GRANT ALL PRIVILEGES ON wordpress.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
-sudo systemctl restart mysqlmysql -h localhost -u root -p --verbose wordpress < wordpress.sql
+sudo systemctl restart mysql
+mysql -h localhost -u root -p --verbose wordpress < wordpress.sql
 ```
+
+###
+
+Wordpress user: 
+l: admin
+p:autoAppLog123
 
 ## License
 
