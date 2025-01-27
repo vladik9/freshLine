@@ -60,11 +60,12 @@ sudo systemctl restart mysql
 mysql -h localhost -u root -p --verbose wordpress < wordpress.sql
 ```
 
-###
+Wordpress user:
 
-Wordpress user: 
-l: admin
+```bash
+user: admin
 p:autoAppLog123
+```
 
 ## License
 
@@ -81,6 +82,5 @@ For any questions or feedback, please open an issue or contact us at [v.cornici@
 ![img](./images/web.gif "Web")
 
 ### Mobile
-
 
 ![img](./images/mobile.gif "Mobile")
