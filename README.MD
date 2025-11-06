@@ -83,4 +83,6 @@ For any questions or feedback, please open an issue or contact us at [v.cornici@
 
 ### Mobile
 
-![img](./images/mobile.gif "Mobile")
+<div align="center">
+  <img src="./images/mobile.gif" alt="Description" width="400"/>
+</div>
